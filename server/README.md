@@ -8,4 +8,10 @@ docker run --name some-redis -p 6379:6379 -d redis
 ```
  docker exec -it some-redis redis-cli ping
 ```
-https://testdriven.io/courses/taxi-react/getting-started/
+https://testdriven.io/courses/taxi-react/getting-started/ 
+
+```
+psql -U postgres
+postgres=# CREATE USER taxi WITH SUPERUSER CREATEDB CREATEROLE PASSWORD 'taxi';
+postgres=# CREATE DATABASE taxi OWNER taxi;
+```
